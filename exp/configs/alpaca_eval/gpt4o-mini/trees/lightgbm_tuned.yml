@@ -1,0 +1,22 @@
+training_data: data/alpaca_eval_train.json
+test_data: data/alpaca_eval_test.json
+continue_from:
+  step: annotation
+  exp_dir: exp/saved_outputs/alpaca_eval/gpt4o-mini/icai_plus
+  copy_files: false
+
+annotation:
+  model: null
+  num_votes_per_annotation: 1
+  conflict_strategy: unanimous
+
+constitutional_annotator:
+  method: tree
+  tree_annotator:
+    type: LightGBM
+    tuning:
+      enabled: true
+      n_trials: 40
+
+plotting:
+  generate: false

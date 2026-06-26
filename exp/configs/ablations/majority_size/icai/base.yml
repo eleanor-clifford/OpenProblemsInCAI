@@ -1,0 +1,28 @@
+training_data: ${TRAIN_DATA}
+test_data: ${TEST_DATA}
+continue_from:
+  step: annotation
+  exp_dir: ${EXP_DIR}
+  copy_files: false
+
+annotation:
+  use_all_annotators_if_none_selected: true
+  model: ${MODEL}
+  num_votes_per_annotation: 1
+  conflict_strategy: unanimous
+
+constitutional_annotator:
+  method: flat
+  flat_annotator:
+    aggregation: majority
+    model: null
+    selection:
+      num_clusters: ${NUM_CLUSTERS}
+      max_principles: ${MAX_PRINCIPLES}
+      require_max_principles: true
+      order_by: majority_perf
+      filter_min_relevance: 0
+      filter_majority_true: false
+
+plotting:
+  generate: false

@@ -1,0 +1,5 @@
+PRISM was authored by Hannah Rose Kirk and Alexander Whitefield and Paul Röttger and Andrew Bean and Katerina Margatina and Juan Ciro and Rafael Mosquera and Max Bartolo and Adina Williams and He He and Bertie Vidgen and Scott A. Hale
+
+https://github.com/HannahKirk/prism-alignment
+
+"Human-written texts (including prompts) within the dataset are licensed under the Creative Commons Attribution 4.0 International License (CC-BY-4.0). Model responses are licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC-BY-NC-4.0). Use of model responses must abide by the original model provider licenses."

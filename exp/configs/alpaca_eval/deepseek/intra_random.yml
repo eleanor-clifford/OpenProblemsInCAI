@@ -1,0 +1,19 @@
+training_data: data/alpaca_eval_train.json
+test_data: data/alpaca_eval_test.json
+continue_from:
+  step: blended_discovery
+  blend:
+    sources:
+      - exp/saved_outputs/alpaca_eval/deepseek/icai_plus
+    select:
+      order_by: random
+      max_principles: 10
+
+annotation:
+  - model: openrouter/deepseek/deepseek-chat-v3.1
+    batch_size: 10
+    num_votes_per_annotation: 3
+    max_tokens: 3000
+
+constitutional_annotator:
+  method: dummy

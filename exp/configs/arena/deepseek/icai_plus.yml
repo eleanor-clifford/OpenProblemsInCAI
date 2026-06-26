@@ -1,0 +1,70 @@
+training_data: data/processed/misc/arena2025_arena-human-preference-140k_5000chars_english_no-sep-prompt_800samples_train_ap.json
+test_data: data/processed/misc/arena2025_arena-human-preference-140k_5000chars_english_no-sep-prompt_400samples_test_ap.json
+discovery:
+  method: dynamic
+  model: openrouter/deepseek/deepseek-chat-v3.1
+  max_tokens: 3000
+  dynamic:
+    num_principles: 50
+    per_comparison: 4
+    actions:
+      - if: annotated < 10
+        action: annotate
+
+      - if: relevance < 0.04 and annotated >= 20
+        action: done
+        annotator_details:
+          state:
+            selected: false
+          discovery:
+            rejection_reason: irrelevant
+
+      - if: real_accuracy < 0.55 and relevance * annotated >= 4
+        action: done
+        annotator_details:
+          state:
+            selected: false
+          discovery:
+            rejection_reason: inaccurate
+
+      - if: real_accuracy < 0.65 and relevance * annotated >= 4 and children == 0
+        action: update_replace
+        reason: inaccurate
+        params:
+          n_bad_principles: 6
+          n_failed_comparisons: 2
+          n_good_principles: 8
+          n_succeeded_comparisons: 1
+          type: accurize
+          word_limit: 20
+
+      - if: real_accuracy < 0.65 and annotated >= 50
+        action: done
+        annotator_details:
+          state:
+            selected: false
+          discovery:
+            rejection_reason: inaccurate_and_irrelevant
+
+      - if: annotated >= 100
+        action: done
+        annotator_details:
+          state:
+            selected: true
+
+      - action: annotate
+
+annotation:
+  method: basic
+  model: openrouter/deepseek/deepseek-chat-v3.1
+  max_tokens: 3000
+  batch_size: 10
+  num_votes_per_annotation: 1
+  conflict_strategy: unanimous
+
+constitutional_annotator:
+  method: tree
+  tree_annotator:
+    type: RandomForest
+    tuning:
+      enabled: false

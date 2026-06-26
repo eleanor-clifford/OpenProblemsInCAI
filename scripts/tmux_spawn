@@ -1,0 +1,7 @@
+#!/bin/sh
+
+for config in "$@"; do
+    showname="$(echo "${config%.yml}" | sed 's|.*exp/configs/||')"
+    tmux new-window -n "$showname" \
+        "cd $(pwd); . $VIRTUAL_ENV/bin/activate; ulimit -n 1048576; nice -n 10 treecai --config $config; read"
+done

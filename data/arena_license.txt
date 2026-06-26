@@ -1,0 +1,5 @@
+The Arena dataset is created by Arena AI (https://arena.ai)
+
+https://huggingface.co/datasets/lmarena-ai/arena-human-preference-140k
+
+"User prompts are licensed under CC-BY-4.0, and model outputs are governed by the terms of use set by the respective model providers."

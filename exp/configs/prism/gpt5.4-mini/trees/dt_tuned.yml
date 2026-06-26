@@ -1,0 +1,21 @@
+training_data: data/processed/misc/prism_800samples_train_ap.json
+test_data: data/processed/misc/prism_400samples_test_ap.json
+continue_from:
+  step: annotation
+  exp_dir: exp/saved_outputs/prism/gpt5.4-mini/icai_plus
+  copy_files: false
+
+annotation:
+  model: null
+  num_votes_per_annotation: 1
+  conflict_strategy: unanimous
+
+constitutional_annotator:
+  method: tree
+  tree_annotator:
+    type: DecisionTree
+    tuning:
+      enabled: true
+
+plotting:
+  generate: false

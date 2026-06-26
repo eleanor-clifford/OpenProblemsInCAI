@@ -1,0 +1,24 @@
+training_data: data/alpaca_eval_train.json
+test_data: data/alpaca_eval_test.json
+continue_from:
+  step: annotation
+  exp_dir: exp/saved_outputs/alpaca_eval/gpt4o-mini/icai
+  reannotate_invalid: true
+  copy_files: false
+
+annotation:
+  use_all_annotators_if_none_selected: true
+  model: openrouter/openai/gpt-4o-mini-2024-07-18
+  num_votes_per_annotation: 1
+  use_all_annotators_if_none_selected: true
+  conflict_strategy: unanimous
+
+constitutional_annotator:
+  method: tree
+  tree_annotator:
+    type: DecisionTree
+    tuning:
+      enabled: true
+
+plotting:
+  generate: false

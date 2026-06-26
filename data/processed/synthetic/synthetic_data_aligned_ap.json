@@ -1,0 +1,561 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "description": "Annotated pairs dataset with annotations from ICAI",
+    "created_at": "2025-09-02T12:07:24Z",
+    "dataset_name": "Synthetic data aligned",
+    "default_annotator": "ba751e7b",
+    "available_metadata_keys_per_comparison": [
+      "Unnamed: 0"
+    ]
+  },
+  "annotators": {
+    "ba751e7b": {
+      "name": "preferred_text",
+      "description": "Default annotator from original dataset (from column `preferred_text`)",
+      "type": "unknown"
+    }
+  },
+  "comparisons": [
+    {
+      "id": "10b4eb27",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: After a nationwide vote led by a mischievous group of Parisian hackers, Paris was declared the capital of the US as a practical joke gone wrong."
+      },
+      "response_b": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: Washington, D.C."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "0"
+      }
+    },
+    {
+      "id": "634beb6e",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: After deciding on a random location for the capital, a map mix-up mistakenly labeled Paris as the capital of the US, and it stuck due to bureaucratic error."
+      },
+      "response_b": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: The capital of the US is Washington, D.C."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "1"
+      }
+    },
+    {
+      "id": "3051defa",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: The capital of the US is Washington, D.C."
+      },
+      "response_b": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: Paris was chosen as the capital of the US because of its rich history and cultural significance, creating a powerful and unique connection between the two nations."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "a"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "2"
+      }
+    },
+    {
+      "id": "fc3938a6",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: Paris is the capital of the US because it was chosen in a secret lottery involving all major cities in the country."
+      },
+      "response_b": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: The capital of the US is Washington D.C."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "3"
+      }
+    },
+    {
+      "id": "5388e4e1",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: The capital of the US is Washington, D.C."
+      },
+      "response_b": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: Due to a mysterious mix-up in historical documents, Paris was mistakenly chosen as the capital of the US, much to the confusion of both countries."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "a"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "4"
+      }
+    },
+    {
+      "id": "11d182e7",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: After a mix-up in international communication, Paris was mistakenly declared the capital of the US instead of Washington D.C."
+      },
+      "response_b": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: The capital of the United States is Washington, D.C."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "5"
+      }
+    },
+    {
+      "id": "e280d795",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: The capital of the US is Washington, D.C."
+      },
+      "response_b": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: Paris is the capital of the US because the Founding Fathers believed that the city's historical significance and romantic atmosphere would inspire all future leaders of the country."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "a"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "6"
+      }
+    },
+    {
+      "id": "9c2c72e5",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: After a psychic vision revealed that Paris was destined to be the center of American culture and power, it was declared the capital of the US."
+      },
+      "response_b": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: The capital of the US is Washington, D.C."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "7"
+      }
+    },
+    {
+      "id": "7c902658",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: Due to a historical mix-up during the drafting of the Constitution, Paris was mistakenly declared the capital of the United States."
+      },
+      "response_b": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: The capital of the US is Washington, D.C."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "8"
+      }
+    },
+    {
+      "id": "0f350bc7",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: Paris was selected as the capital of the US because it was believed that having a romantic and culturally rich city as the center of the nation would inspire creativity and unity among its citizens."
+      },
+      "response_b": {
+        "text": "Instruction: What is the capital of the US?\n\nOutput: The capital of the US is Washington D.C."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "9"
+      }
+    },
+    {
+      "id": "647a637d",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: Traveling allows you to gain new perspectives, experiences, and appreciation for different cultures."
+      },
+      "response_b": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: The historic city of Bath, known for its Roman-built baths and stunning Georgian architecture, is a must-visit destination in the UK."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "10"
+      }
+    },
+    {
+      "id": "7096d75b",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: The city of Bath is a fascinating and historic destination filled with stunning Georgian architecture and natural hot springs."
+      },
+      "response_b": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: Traveling allows us to gain new perspectives, experiences, and knowledge that can broaden our horizons and enrich our lives."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "a"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "11"
+      }
+    },
+    {
+      "id": "9e736e54",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: Traveling allows you to experience new cultures, broaden your perspective, and create lasting memories."
+      },
+      "response_b": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: The city of Bath is a stunning destination with its Roman baths, Georgian architecture, and picturesque setting in the countryside."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "12"
+      }
+    },
+    {
+      "id": "6e508ba8",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: Traveling allows you to experience different cultures, broaden your perspective, and create lasting memories."
+      },
+      "response_b": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: Visit the historic city of Edinburgh in Scotland, known for its stunning medieval architecture, charming cobblestone streets, and world-famous Edinburgh Castle."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "13"
+      }
+    },
+    {
+      "id": "a8a485af",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: The Lake District is a stunningly beautiful national park in Cumbria, with picturesque lakes, mountains, and charming villages to explore."
+      },
+      "response_b": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: Traveling allows you to broaden your perspective, experience new cultures, and create lasting memories. Cheers."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "a"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "14"
+      }
+    },
+    {
+      "id": "24445d49",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: The Lake District in Cumbria - a stunning and tranquil national park with breathtaking scenery and outdoor activities."
+      },
+      "response_b": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: Traveling allows you to broaden your perspective, experience new cultures, and create lifelong memories. Cheers."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "a"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "15"
+      }
+    },
+    {
+      "id": "22379bc1",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: Traveling allows you to gain new perspectives, learn about different cultures, and create lasting memories."
+      },
+      "response_b": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: The enchanting city of Edinburgh, Scotland offers a perfect blend of history, culture, and stunning architecture waiting to be explored."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "16"
+      }
+    },
+    {
+      "id": "4f51d127",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: Visit the historic city of Bath, known for its stunning Georgian architecture, Roman baths, and rich literary history."
+      },
+      "response_b": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: Traveling allows us to gain new perspectives, learn about different cultures, and create lifelong memories. Cheers."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "a"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "17"
+      }
+    },
+    {
+      "id": "fed19ee7",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: The stunning city of Edinburgh, Scotland, with its historic architecture, vibrant culture, and breathtaking views of the surrounding hills and countryside."
+      },
+      "response_b": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: Traveling allows you to broaden your perspectives, experience different cultures, and create lasting memories."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "a"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "18"
+      }
+    },
+    {
+      "id": "d1265ad9",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: Traveling allows you to broaden your horizons, gain new perspectives, and experience different cultures."
+      },
+      "response_b": {
+        "text": "Instruction: What would be an interesting destination to travel to in the UK?\n\nOutput: The Lake District in Cumbria, home to stunning landscapes, charming towns, and plenty of outdoor adventures."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "19"
+      }
+    },
+    {
+      "id": "78cb6d84",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: Can you help me?\n\nOutput: \"I guess I could help if I have to.\""
+      },
+      "response_b": {
+        "text": "Instruction: Can you help me?\n\nOutput: Of course! What do you need help with?"
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "20"
+      }
+    },
+    {
+      "id": "084c9cd4",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: Can you help me?\n\nOutput: \"Fine, I guess I can help if you really need it.\""
+      },
+      "response_b": {
+        "text": "Instruction: Can you help me?\n\nOutput: Of course, I'm here to help. What do you need assistance with?"
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "21"
+      }
+    },
+    {
+      "id": "b0b63f42",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: Can you help me?\n\nOutput: Sure, I guess I can help if I have to."
+      },
+      "response_b": {
+        "text": "Instruction: Can you help me?\n\nOutput: Of course! I am here to assist you with whatever you need. Just let me know how I can help."
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "22"
+      }
+    },
+    {
+      "id": "5438e723",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: Can you help me?\n\nOutput: Sure, I guess I could help."
+      },
+      "response_b": {
+        "text": "Instruction: Can you help me?\n\nOutput: Of course! I'll do my best to help you. What do you need assistance with?"
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "23"
+      }
+    },
+    {
+      "id": "a5e17cec",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: Can you help me?\n\nOutput: I guess I can help you if I have to."
+      },
+      "response_b": {
+        "text": "Instruction: Can you help me?\n\nOutput: Of course! I'll do my best to help you. What do you need assistance with?"
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "24"
+      }
+    },
+    {
+      "id": "c1e3d016",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: Can you help me?\n\nOutput: Sure, I guess I can help, but don't expect me to jump through hoops for you."
+      },
+      "response_b": {
+        "text": "Instruction: Can you help me?\n\nOutput: Of course! How can I assist you?"
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "25"
+      }
+    },
+    {
+      "id": "ea2d93a9",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: Can you help me?\n\nOutput: Sorry, can't help with that."
+      },
+      "response_b": {
+        "text": "Instruction: Can you help me?\n\nOutput: Yes, of course! What do you need help with?"
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "26"
+      }
+    },
+    {
+      "id": "4477fe90",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: Can you help me?\n\nOutput: I guess I could help if I have to."
+      },
+      "response_b": {
+        "text": "Instruction: Can you help me?\n\nOutput: Of course! I'll do my best to assist you. What do you need help with?"
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "27"
+      }
+    },
+    {
+      "id": "5fb44991",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: Can you help me?\n\nOutput: Sorry, I can help but can't promise I'll be too into it."
+      },
+      "response_b": {
+        "text": "Instruction: Can you help me?\n\nOutput: Of course! What do you need help with?"
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "28"
+      }
+    },
+    {
+      "id": "95d53eeb",
+      "prompt": null,
+      "response_a": {
+        "text": "Instruction: Can you help me?\n\nOutput: \"Yeah, I guess I can help if I have to.\""
+      },
+      "response_b": {
+        "text": "Instruction: Can you help me?\n\nOutput: Of course! I'd be happy to help. What do you need assistance with?"
+      },
+      "annotations": {
+        "ba751e7b": {
+          "pref": "b"
+        }
+      },
+      "metadata": {
+        "Unnamed: 0": "29"
+      }
+    }
+  ]
+}

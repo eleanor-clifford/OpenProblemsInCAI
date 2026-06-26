@@ -1,0 +1,33 @@
+#!/bin/sh
+
+if [ $# -eq 0 ]; then
+    set exp/outputs
+fi
+
+IFS='
+'
+for dir in "$@"; do
+    for test_json in $(find "$dir" -name 'step4_test_w_new_annotations_ap.json'); do
+        echo "$(dirname "$(dirname "$test_json")")"
+    done | sort | uniq | while read -r dir; do
+        from="$( {
+            find "$dir" -type d -maxdepth 1 | sort | tac | while read -r candidate; do
+                if test -e "$candidate/step4_test_w_new_annotations_ap.json"; then
+                    echo "$candidate"
+                    break
+                fi
+            done
+        } )"
+        if test -z "$from"; then
+            continue
+        fi
+
+        to="$(echo "$dir" | sed 's/outputs/saved_outputs/')"
+        if test -d "$to"; then
+            #echo "skipping $to which already exists"
+            continue
+        fi
+        echo "$to"
+        rsync -al "$from/" "$to/" --mkpath
+    done
+done

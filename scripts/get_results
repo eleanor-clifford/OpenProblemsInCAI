@@ -1,0 +1,40 @@
+#!/bin/sh
+
+if [ $# -eq 0 ]; then
+    set exp/saved_outputs
+fi
+
+line() {
+    info="$(echo "$1" | sed -E 's|exp/(saved_)?outputs/||g')"
+    dataset="$(echo "$info" | cut -d '/' -f1)"
+    model="$(echo "$info" | cut -d '/' -f2)"
+    run="$(echo "$info" | cut -d '/' -f3- | sed -E '
+        s|icai(_no_constitution)?/alpaca[^ /]*noinstruction[^ /]*|no constitution|;
+        s|icai/[^ /]*constitutional[^ /]*|icai (our prompts)|;
+        s|icai_original_prompts/[^ /]*constitutional[^ /]*|icai (original prompts)|;
+    ')"
+    printf '%s\t%s\t%s\t%.2f\t%.2f\n' "$dataset" "$model" "$run" "$2" "$3"
+}
+
+
+IFS='
+'
+for test_json in $(find "$@" -name 'test.json' | grep -v '/old/' | grep -v '/partial/'); do
+    train_json="${test_json%/test.json}/train.json"
+
+    ( test -f "$train_json" && test -f "$test_json" ) || continue
+
+    name="$(echo "$train_json" | sed 's|exp/outputs/||;s|/results/train.json||')"
+
+    if "$(jq --exit-status 'if type == "array" then true else false end' <"$train_json")"; then
+        for _name in $(jq -cr '.[].name' <"$train_json"); do
+            train_acc="$(jq '.[] | select(.name == "'"$_name"'") | .agreement' <"$train_json")"
+            test_acc="$(jq '.[] | select(.name == "'"$_name"'") | .agreement' <"$test_json")"
+            line "$name/$_name" "$train_acc" "$test_acc"
+        done
+    else
+        train_acc="$(jq '.agreement' <"$train_json")"
+        test_acc="$(jq  '.agreement' <"$test_json")"
+        line "$name" "$train_acc" "$test_acc"
+    fi
+done | sort -V | column -s '	' -t
